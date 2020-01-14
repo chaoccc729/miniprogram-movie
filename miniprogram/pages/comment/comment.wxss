@@ -1,0 +1,35 @@
+.de_content{
+  width: 100%;
+  height: 500rpx;
+  position: relative;
+}
+.de_bg{
+  width: 750rpx;
+  height: 100%;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+.de_info{
+  display: flex;
+  top: 50rpx;
+  left: 40rpx;
+  position: absolute;
+}
+.de_sm{
+  width: 300rpx;
+  height: 400rpx;
+}
+.de_ms{
+  flex-grow: 1;
+  margin-left: 34rpx;
+  line-height: 80rpx;
+  color: #FFFFFF;
+}
+.de_title{
+  font-size: 46rpx;
+  margin: 20rpx auto;
+}
+.de_in{
+  margin: 0 20rpx;
+  font-size: 24rpx;
+}

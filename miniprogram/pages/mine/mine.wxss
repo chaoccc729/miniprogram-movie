@@ -1,0 +1,30 @@
+/* pages/mine/mine.wxss */
+#content {
+  width: 750rpx;
+  height: 550rpx;
+  position: relative;
+}
+#content image{
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+}
+#photo{
+  width: 200rpx;
+  height: 200rpx;
+  top: 100rpx;
+  left: 50%;
+  margin-left: -100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+#name{
+  width: 100%;
+  bottom: 100rpx;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 48rpx;
+  font-weight: bold;
+  position: absolute;
+}

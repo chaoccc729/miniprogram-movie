@@ -1,0 +1,13 @@
+<!--pages/mine/mine.wxml-->
+<view id="content">
+
+  <image src="/images/s.jpg"></image>
+
+  <view id="photo">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+
+  <view id="name">
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>

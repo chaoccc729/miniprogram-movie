@@ -1,0 +1,40 @@
+<view class="de_content">
+  <image class="de_bg" src="{{details.images.medium}}"></image>
+
+  <view class="de_info">
+    <image class="de_sm" src="{{details.images.small}}"></image>
+    <view class="de_ms">
+      <view class="de_title">{{details.title}}</view>
+      
+      <view class="de_aver">豆瓣评分：{{details.rating.average}}</view>
+      <view class="de_lang">
+        语言：
+        <text wx:for="{{details.languages}}" wx:key="{{index}}">{{item}}</text>
+      </view>
+      <view class="de_dir">
+        导演：
+        <text wx:for="{{details.directors}}" wx:key="{{index}}">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class="de_in">{{details.summary}}</view>
+
+
+<van-field
+value="{{ comment }}"
+placeholder="请输入评价"
+border="{{ true }}"
+bind:change="onInputChange"
+/>
+
+<van-rate value="{{ score }}" bind:change="onRateChange" />
+<van-button bind:click="upload" type="info">上传图片</van-button>
+
+<view>
+  <image wx:for="{{images}}" src="{{item}}" wx:key="{{index}}"></image>
+</view>
+
+<van-button bind:click="submit" size="large">提交</van-button>

@@ -1,0 +1,18 @@
+<view id="movieList" wx:for="{{movieList}}" wx:key="{{item.id}}" >
+  <image class="mo_img" src="{{item.images.small}}"></image>
+  <view class="movie_info">
+    <view class="mo_title">{{item.title}}</view>
+    <view>
+      上映时间：<text class="mo_time">{{item.mainland_pubdate}}</text>
+    </view>
+    <view>
+      豆瓣评分：<text class="mo_aver">{{item.rating.average}}</text>
+    </view> 
+    <view class="mo_cast">
+      演员: <text  wx:for="{{item.casts}}" wx:key="{{index}}"> {{item.name}}</text>
+    </view> 
+  </view>
+  <view id="mo_btn">
+      <van-button data-id="{{item.id}}" bind:click="tap"  size="mini" round type="danger">评分</van-button>
+  </view>
+</view>
